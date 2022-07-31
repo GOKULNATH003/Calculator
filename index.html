@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*styling body*/
+        body{
+            height: 100vh;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ /*styling container*/
+        .container{
+            width: 25%;
+            height: 72% ;
+            background-color: white;
+            border-radius: 20px ;
+            box-shadow: 1px 1px 30px rgb(0, 255, 145);
+        }
+         /*styling input box*/
+        .inp{
+            width: 90% ;
+            padding: 0px 10px 0px 0px;
+            margin: 15px 0vh 0vh 1.3vh;
+            height: 100px;
+            border: 2px groove white;
+            outline: none;
+            border-radius: 10px ;
+        }
+         /*styling buttons*/
+        input{
+            width: 3vw;
+            height: 3vw;
+            border-radius: 50%;
+            text-align: center;
+            border: none;
+            box-shadow: 1px 1px 5px black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            background-color: white;
+          
+
+            
+        }
+
+        input:hover{
+            box-shadow: none;
+        }
+        /*styling buttonss*/
+        .btns{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px   ;
+            padding: 20px;
+
+        }
+         /*styling buttons nth childs*/
+        .btns input:nth-child(17){
+            color: black;
+            border-radius: 10px ;
+            width: 80%;
+            transform: translateX(15px);
+          
+        }
+        .btns input:nth-child(17):hover{
+            color: white;
+           background-color: rgba(0,128,0,.7)
+        }
+
+        .btns input:nth-child(4):hover{
+            background-color: rgba(0,0,255,.5);
+        }
+        .btns input:nth-child(8):hover{
+            background-color: rgba(0,0,255,.5);
+        }
+        .btns input:nth-child(12):hover{
+            background-color: rgba(0,0,255,.5);
+        }
+        .btns input:nth-child(13):hover{
+            background-color: rgba(0,0,255,.5);
+        }
+.btns input:nth-child(1):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(2):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(3):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(5):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(6):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(7):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(9):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(10):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(11):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(14):hover{
+    background-color:rgba(0,139,139,.5);
+}
+.btns input:nth-child(15):hover{
+    background-color:rgba(0,139,139,.5);
+}
+       .inp{
+    box-shadow: none;
+        }
+        .btns input:nth-child(16){
+            color: red;
+        }
+        .btns input:nth-child(16):hover{
+            color: white;
+            background-color: rgba(250,0,0,.7);
+        }
+
+    /*h1*/
+    h1{display: flex;
+     
+     position: absolute;
+        text-align: center;
+        font-style: italic;
+color: aliceblue;
+        align-self: flex-start;
+    }
+        
+</style>
+
+</head>
+<body>
+    <h1>Calculator</h1>
+    <!-- body start -->
+<div class="container">
+    <form action="" name="form1">
+        <!-- answer displaying container -->
+    <input type="text" class="inp" name="answer">
+    <!-- buttons -->
+    <div class="btns">
+    <input type="button" value="1" onclick="form1.answer.value +='1'" >
+    <input type="button" value="2" onclick="form1.answer.value +='2'" >
+    <input type="button" value="3" onclick="form1.answer.value +='3'" >
+    <input type="button" value="+" onclick="form1.answer.value +='+'" >
+    <input type="button" value="4" onclick="form1.answer.value +='4'" >
+    <input type="button" value="5" onclick="form1.answer.value +='5'" >
+    <input type="button" value="6" onclick="form1.answer.value +='6'" >
+    <input type="button" value="-" onclick="form1.answer.value +='-'" >
+    <input type="button" value="7" onclick="form1.answer.value +='7'" >
+    <input type="button" value="8" onclick="form1.answer.value +='8'" >
+    <input type="button" value="9" onclick="form1.answer.value +='9'" >
+    <input type="button" value="*" onclick="form1.answer.value +='*'" >
+    <input type="button" value="/" onclick="form1.answer.value +='/'" >
+    <input type="button" value="0" onclick="form1.answer.value +='0'" >
+    <input type="button" value="." onclick="form1.answer.value +='.'" >
+    <input type="button" value="C" onclick="form1.answer.value =''" id="clear" >
+    <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)" >
+    <br>
+
+</div>
+</form>
+</div>
+
+    <!-- bootstrap links -->
+
+</body>
+</html>
